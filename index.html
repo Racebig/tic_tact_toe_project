@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="player-form-wrapper">
+        <h3>Player 1</h3>
+        <form id="player-1-form">
+            <input id="player-1-name" type="text" placeholder="Enter name">
+        </form>
+        <h3>Player 2</h3>
+        <form id="player-2-form">
+            <input id="player-2-name" type="text" placeholder="Enter name">
+            <button id="player-submit-button" type="button" onclick="displayController.getPlayerData()">Submit</button>
+        </form>
+    </div>
+
+    <div id="gameboard">
+        <div class="gameboard-square" data-count="0"></div>
+        <div class="gameboard-square" data-count="1"></div>
+        <div class="gameboard-square" data-count="2"></div>
+        <div class="gameboard-square" data-count="3"></div>
+        <div class="gameboard-square" data-count="4"></div>
+        <div class="gameboard-square" data-count="5"></div>
+        <div class="gameboard-square" data-count="6"></div>
+        <div class="gameboard-square" data-count="7"></div>
+        <div class="gameboard-square" data-count="8"></div>
+    </div>
+    <div style="display: none;" id="button-wrapper">
+        <button class="game-button" onclick="gameBoard.resetBoard()" type="button">Reset</button>
+        <button class="game-button" onclick="displayController.displayForm()" type="button">Exit</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
